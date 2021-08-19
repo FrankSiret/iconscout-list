@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/line.min.css">
+	<link rel="stylesheet" href="./styles/style1.css">
+	<link rel="stylesheet" href="./styles/style2.css">
+	<title>Iconscout List</title>
+</head>
+
+<body class="min-vh-100 bg-gray0 gray7 ma0 overflow-x-hidden">
+	<div id="vue-container">
+		<div id="page-top" class="wrapper-view overflow-x-hidden">
+			<div class="view flex flex-column min-vh-100 db-pr">
+				<div class="flex-grow-1 flex-shrink-0 flex-basis-auto">
+					<div
+						class="mw9 center bg-gray0 flex-grow-1 flex-shrink-0 flex-basis-auto flex flex-column flex-row-l justify-between-l items-stretch-l">
+						<main id="search-results"
+							class="w-100 pa4 pa5-l pa6-xl flex flex-column flex flex-column overflow-x-hidden">
+							<section class="mb4 mb6-l">
+								<div class="flex flex-row flex-nowrap items-center justify-between">
+									<div class="db w-100 relative">
+										<div class="relative z-2">
+											<input id="search_query" placeholder="Search 1,204 icons for..."
+												name="search_query" type="text"
+												class="input-reset input-focus all-animate w-100 bg-white db shadow-inset-2 ba bw1 br2 pv3 pl4 pr6 lh-solid sans-serif b--gray3 fw6 f5 gray7">
+											<svg aria-hidden="true" focusable="false" data-prefix="fas"
+												data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 0 512 512"
+												class="o-15 absolute center-v right-1 pe-none svg-inline--fa fa-search fa-w-16 fa-fw fa-lg">
+												<path fill="currentColor"
+													d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+													class=""></path>
+											</svg>
+										</div>
+										<button id="search_submit" type="submit" name="button"
+											class="sr-only">Search</button>
+									</div>
+								</div>
+							</section>
+							<div class="mb3">
+								<header
+									class="flex flex-column flex-row-ns flex-nowrap-ns justify-between-ns items-center-ns bb bw2 b--gray2 pb3 mb3">
+									<h1 class="sans-serif db mt0 mb3 mb0-l f5 fw6">
+										<span><span id="query-count">All 1,204</span> Iconscout</span>
+									</h1>
+								</header>
+							</div>
+							<section id="results-icons">
+								<ul
+									class="iconscout-list list ma0 pa0 flex flex-row flex-wrap justify-start items-start">
+								</ul>
+							</section>
+						</main>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
